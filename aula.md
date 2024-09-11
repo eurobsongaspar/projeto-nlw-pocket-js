@@ -62,3 +62,4 @@ Operadores de concatenação
 
 # Condicionais
 
+- [*] Switch
