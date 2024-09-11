@@ -55,3 +55,10 @@ Operadores de concatenação
 - [*] Criar, passar argumento
 - [*] Executar
 - [*] arrow function / named function
+
+# Estrutura de repetição
+
+- [*] While (estrutura de repetição)
+
+# Condicionais
+
