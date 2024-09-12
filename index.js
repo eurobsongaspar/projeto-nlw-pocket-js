@@ -1,4 +1,26 @@
-const { select } = require('@inquirer/prompts') // Importa o objeto @inquirer/prompts de dentro da pasta node_modules mostrando apenas o SELECT, que é o que precisamos usar.
+const { select, input } = require('@inquirer/prompts') // Importa o objeto @inquirer/prompts de dentro da pasta node_modules mostrando o SELECT e o IMPUT, que é o que precisamos usar.
+
+let meta = {
+    value: 'Tomar 3l de água por dia',
+    checked: false,
+}
+let metas = [ meta ]
+
+const cadastrarMeta = async () => {
+
+    const meta = await input({message:"Digita a meta:"}) // Cria uma função com intuito de pedir ao usuário que digite uma meta
+
+    if(meta.length == 0){ // Lenght significa quantidade de caracteres, ou seja, ele verifica se o usuário escreveu algo no input
+        console.log('A meta não pode ser vazia') // Caso ele não tenha digitado nada, mostra a mensagem META NÃO PODE SER VAZIA
+        return 
+    }
+
+    metas.push(
+        {
+            value: meta, checked: false
+        }
+    )
+}
 
 const start = async () => { // ASYNC é usado junto com o AWAIT para solicitar uma pausa, ou seja, o sistema precisa esperar uma resposta do usuário para continuar, do contrário, o código ficaria em repetição contínua por conta do WHILE.
     
@@ -25,7 +47,8 @@ const start = async () => { // ASYNC é usado junto com o AWAIT para solicitar u
 
         switch(opcao){ 
             case "cadastrar": // Cria o case CADASTRAR 
-                console.log("Vamos cadastrar") // Mostra a mensagem VAMOS CADASTRAR após seleção do usuário
+                await cadastrarMeta()
+                console.log(metas)
                 break // para a mensagem
 
             case "listar": // Cria o case LISTAR

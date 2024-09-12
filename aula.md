@@ -34,9 +34,9 @@ Variáveis globais e locais
 constantes
 
 ## Operadores 
-Operadores de atribuição de valor
-
-Operadores de concatenação
+- [*] Operadores de atribuição de valor = 
+- [*] Operadores de concatenação +
+- [*] Operadores de comparação == != <= >= < >
 
 ## Estrutura de dados
 
