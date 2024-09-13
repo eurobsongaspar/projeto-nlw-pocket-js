@@ -37,12 +37,14 @@ constantes
 - [*] Operadores de atribuição de valor = 
 - [*] Operadores de concatenação +
 - [*] Operadores de comparação == != <= >= < >
+- [*] Spread operator: ...
 
 ## Estrutura de dados
 
 ### Arrays:
 
 - [*] Uma lista que contem qualquer tipo de dados
+- [*] Métodos de array: push, (find,  forEsch, filter) : H0F (Higher order functions)
 
 ### Objetos:
 
