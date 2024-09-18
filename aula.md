@@ -70,6 +70,14 @@ constantes
 
 - [*] Importação de módulos (require, CommonJS)
 - [*] Biblioteca 'inquirer' para criar prompts interativos
+- [*] FS (file system)
+
+##JSON
+
+- [*] Javascript Object Notation (.json)
+- [*] JSON.parse(): Transforma de JSON para JS
+- [*] JSON.stringify(): Transforma de JS para JSON
+
 
 ## Programação assíncrona e Promises:
 
