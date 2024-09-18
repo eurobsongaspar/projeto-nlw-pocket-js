@@ -44,7 +44,7 @@ constantes
 ### Arrays:
 
 - [*] Uma lista que contem qualquer tipo de dados
-- [*] Métodos de array: push, (find,  forEsch, filter) : H0F (Higher order functions)
+- [*] Métodos de array: push, (find,  forEsch, filter, map) : H0F (Higher order functions)
 
 ### Objetos:
 
